@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js 1 : validation des forms</title>
+	<style>
+		#c{
+			width: 400px;
+			margin: auto;
+			border: 1px solid black;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		#c label{
+width: 100px;
+
+		}
+
+		#c input{
+width: 290px;
+
+		}
+</style>
+	<script type="text/javascript" src="validation.js"></script>
+</head>
+
+<body>
+<!-- form>(label[for="i$"]{champs$}+input[id="champ$"]) -->
+<form action="">
+<div id="c">
+	<label for="cin">Cin</label>
+	<input type="text" id="cin" onblur="validerCin()">
+	<label for="i2">champs2</label>
+	<input type="text" id="champ2">
+	<label for="i3">champs3</label>
+	<input type="text" id="champ3">
+	<label for="i4">champs4</label>
+	<input type="text" id="champ4">
+	<label for="i4"></label>
+	<input type="button" id="champ4" value="valider">
+	</div>
+</form>
+</body>
+</html>
