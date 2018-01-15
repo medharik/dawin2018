@@ -6,5 +6,7 @@ if ($age>18) {
 } else {
 	$message="mineur";
 }
-echo $message;
+$js = array('age' =>$age,'message'=>$message );
+sleep(1);
+echo json_encode($js);
  ?>
